@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def start():
-    return "The MBSA Server is Running"
+    return "The flask Server is Running"
 
-@app.route("/mbsa")
+@app.route("/index")
 def mbsa():
     return render_template('index.html')
 
